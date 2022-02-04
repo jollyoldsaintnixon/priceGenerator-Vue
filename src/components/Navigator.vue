@@ -4,7 +4,7 @@
             <i class="material-icons" style="{color: unlockedBackColor}">
                 arrow_left</i>
         </div>
-        <div class="button submit-button" :class="{unlocked: ready}" @click="onSubmit">Submit</div>
+        <div class="button submit-button" :class="{unlocked: unlockedSubmit}" @click="onSubmit">Submit</div>
         <div class="button next" :class="{unlocked: unlockedNext}" @click="onNext">
             <i className="material-icons" style="{color: unlockedNextColor}">
                     arrow_right</i>
@@ -46,7 +46,8 @@ export default {
         ready: {
             type: Boolean,
             required: true
-        }
+        },
+        submitted: Boolean
     },
     methods: {
         onNext() {
@@ -104,6 +105,9 @@ export default {
         unlockedNextColor() {
             return this.unlockedNext ? "#08a6f0" : "gray"
         },
+        unlockedSubmit() {
+            return this.ready && !this.submitted
+        }
     }
 }
 </script>

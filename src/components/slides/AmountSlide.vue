@@ -1,7 +1,7 @@
 <template>
     <div class="slide">
         <div class="slide-headline">{{headline}}</div>
-        <input class="input" type="number" min="0" autoFocus v-model="selectedAmount" @change="onSelect" /> 
+        <input class="input" type="number" min="0" autofocus v-model="selectedAmount" @change="onSelect" /> 
     </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
     },
     data() {
         return {
-            selectedAmount: null,
+            selectedAmount: 0,
         }
     },
     methods: {

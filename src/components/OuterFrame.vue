@@ -18,6 +18,7 @@
                 :selectedRate="selectedRate"
                 :selectedUnits="selectedUnits"
                 :ready="readyToSubmit"
+                :submitted="submitted"
                 @prev-slide="onPrevSlide"
                 @next-slide="onNextSlide"
                 @submitted="onSubmit"
