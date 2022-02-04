@@ -18,14 +18,6 @@ export default {
         selectedAmount: Number,
         submitted: Boolean
     },
-    data() {
-        return {
-            
-        }
-    },
-    methods: {
-        
-    },
     computed: {
         details() {
             const converted = convertToWord(this.selectedUnits)
@@ -45,9 +37,6 @@ export default {
             if (this.submitted) return PRICE_SHEET[this.selectedVehicle][this.selectedRate] * this.selectedUnits * this.selectedAmount
             return "Please fill out the rest of the form"
         }
-    },
-    components: {
-
     },
 }
 </script>

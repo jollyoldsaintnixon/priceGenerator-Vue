@@ -1,35 +1,13 @@
 <template>
     <div class="slide">
         <p className="slide-headline">{{headline}}</p>
-        <input class="input" type="number" min="0" autoFocus v-model="selectedUnits" @change="onSelect"/>
+        <input class="input" type="number" min="0"  autoFocus v-model="selectedUnits" @change="onSelect"/>
     </div>
 </template>
 
 <script>
 import { DAILY, HOURLY, DISTANCE } from "../../data"
 import { makePlural } from '../../helpers';
-
-    // makeSentenceEnd() {
-    //     switch (this.props.selectedRate) {
-    //         case DAILY:
-    //             return `for how many days will you need the ${makePlural(this.props.selectedVehicle)}?`
-    //         case HOURLY:
-    //             return `for how many hours will you need the ${makePlural(this.props.selectedVehicle)}?`
-    //         case DISTANCE:
-    //             return "how many miles do you expect to cover?"
-    //     }
-    // }
-
-    // render() {
-    //     const sentenceEnd = this.makeSentenceEnd()
-    //     const { selectedUnits } = this.props
-    //     return (
-    //         <div className="slide slide-amount">
-    //             <p className="slide-headline">And finally, {sentenceEnd}</p>
-    //             <input className="input" type="number" min="0" autoFocus value={selectedUnits} onChange={e => this.props.onSelect(e)}></input>
-    //         </div>
-    //     )
-    // }
 
 export default {
     name: "UnitsSlide",

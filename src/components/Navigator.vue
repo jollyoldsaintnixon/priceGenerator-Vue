@@ -15,37 +15,6 @@
 
 
 <script>
-        // const unlockedBack = this.unlockBack() // lots of variables; probably could have made it more of a function
-        // const unlockedBackColor = unlockedBack ? "#08a6f0" : "gray"
-        // const unlockedBackClass = unlockedBack ? " unlocked" : ""
-        // const unlockedNext = this.unlockNext()
-        // const unlockedNextColor = unlockedNext ? "#08a6f0" : "gray"
-        // const unlockedNextClass = unlockedNext ? " unlocked" : ""
-        // const ready = this.checkReady()
-        // const readyClass = ready ? " unlocked" : ""
-        // return (
-        //     <div className="navigator">
-            
-        //         <a className={"button prev" + unlockedBackClass} onClick={(e) => {
-        //                 if (unlockedBack) {
-        //                 return this.props.onBack(e)
-        //                 } return
-        //             }}><i class="material-icons" style={{color: unlockedBackColor}}>
-        //         arrow_left</i></a>
-        //         <a className={"button submit" + readyClass} onClick={(e) => {
-        //                 if (ready) {
-        //                     return this.props.onSubmit(e)
-        //                 } return
-        //             }}>Submit</a>
-        //         <a className={"button next" + unlockedNextClass} 
-        //         onClick={(e) => {
-        //                 if (unlockedNext) {
-        //                     return this.props.onNext(e)
-        //                 } return
-        //             }}><i className={"material-icons"} style={{color: unlockedNextColor}}>
-        //             arrow_right</i></a>
-        //     </div>
-        // )
 
 export default {
     name: "Navigator",
@@ -77,11 +46,6 @@ export default {
         ready: {
             type: Boolean,
             required: true
-        }
-    },
-    data() {
-        return {
-            
         }
     },
     methods: {

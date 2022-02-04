@@ -37,9 +37,6 @@ export default {
             ". How would you like to measure your reservation- by days, hours or distance driven?")
         }
     },
-    components: {
-
-    },
 }
 </script>
 

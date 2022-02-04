@@ -7,8 +7,6 @@
 
 <script>
 import {makePlural} from "../../helpers.js" 
-// <p className="slide-headline">How many {makePlural(this.props.selectedVehicle)} would you like to reserve?</p>
-// <input className="input" type="number" min="0" autoFocus value={selectedAmount} onChange={e => this.props.onSelect(e)}></input>
 
 export default {
     name: "AmountSlide",
@@ -38,9 +36,6 @@ export default {
                 return "Please select a vehicle"
             }
         }
-    },
-    components: {
-
     },
 }
 </script>
